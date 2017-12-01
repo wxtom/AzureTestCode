@@ -1,10 +1,3 @@
-﻿#
-# Script.ps1
-#
-#
-# Script.ps1
-# install
-#Install-Module -Name AzureRmStorageTable -RequiredVersion 1.0.0.8
 
 $resourceGroup ="XXXX"
 $storageAccount = "XXX"
