@@ -5,7 +5,7 @@ $tableName = "XXXX"
 $storageAccountKey = "XXXX"
 
 $ctx = New-AzureStorageContext -StorageAccountName $storageAccount -StorageAccountKey $storageAccountKey
-[Reflection.Assembly]::LoadFrom(".\System.Spatial.dll") | Out-Null
+[Reflection.Assembly]::LoadFrom("path of System.Spatial.dll") | Out-Null
 $table = Get-AzureStorageTable -Name $tableName -Context $ctx 
 $csvPath ='c:\tom\test3.csv'
 $cols = "Label_Usage,Label_Value,Usage_Location" #should be corrensponding to your csv column exclude Partitionkey and RowKey
