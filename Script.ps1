@@ -30,7 +30,7 @@ foreach($line in $csv)
 	else
 	{	$number =0
 		$result = $table.CloudTable.ExecuteBatch($batchOperation)
-		Microsoft.WindowsAzure.Storage.Table.TableBatchOperation]$batchOperation = New-Object -TypeName Microsoft.WindowsAzure.Storage.Table.TableBatchOperation
+		[Microsoft.WindowsAzure.Storage.Table.TableBatchOperation]$batchOperation = New-Object -TypeName Microsoft.WindowsAzure.Storage.Table.TableBatchOperation
 	
 	}
      
